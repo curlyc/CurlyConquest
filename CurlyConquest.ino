@@ -4,6 +4,7 @@
 Arduboy2 ab;
 //27 total a-f
 // a = north america
+char own = 0;
 int a1 = 0;
 int a2 = 0;
 int a3 = 0;
@@ -144,6 +145,23 @@ if (!(ab.nextFrame()))
         xloc = 75; //move to  D3
         yloc = 9;
       }
+        if ((xloc == 95) && (yloc == 19) && ab.pressed(LEFT_BUTTON)&& ab.everyXFrames(17))  { //if at e6 and press LEFT
+        xloc = 76; //move to  D4
+        yloc = 20; 
+      }
+        if ((xloc == 110) && (yloc == 15) && ab.pressed(LEFT_BUTTON)&& ab.everyXFrames(18))  { //if at e3 and press LEFT
+        xloc = 95; //move to  E6
+        yloc = 19; 
+      }
+      if ((xloc == 106) && (yloc == 29) && ab.pressed(LEFT_BUTTON)&& ab.everyXFrames(18))  { //if at e4 and press LEFT
+        xloc = 95; //move to  E6
+        yloc = 19; 
+      }
+      //AUS LEFT
+      if ((xloc == 113) && (yloc == 46) && ab.pressed(LEFT_BUTTON)&& ab.everyXFrames(18))  { //if at e4 and press LEFT
+        xloc = 106; //move to F2
+        yloc = 45; 
+      }
     //RIGHT
     // NORTH AMERICA
       if ((xloc == 4) && (yloc == 6) && ab.pressed(RIGHT_BUTTON)&& ab.everyXFrames(26))  { //if at a1 and press right
@@ -204,14 +222,28 @@ if (!(ab.nextFrame()))
         xloc = 93; //move to  E1
         yloc = 8;
       }  
-       if ((xloc == 76) && (yloc == 20) && ab.pressed(RIGHT_BUTTON)&& ab.everyXFrames(10))  { //if at D3 and press right
-        xloc = 102; //move to  E5
-        yloc = 35;
+       if ((xloc == 76) && (yloc == 20) && ab.pressed(RIGHT_BUTTON)&& ab.everyXFrames(15))  { //if at D4 and press right
+        xloc = 95; //move to  E6
+        yloc = 19;
       }  
-      //UP
+      //ASIA RIGHT
+      if ((xloc == 95) && (yloc == 19) && ab.pressed(RIGHT_BUTTON)&& ab.everyXFrames(15))  { //if at E6 and press right
+        xloc = 110; //move to  E3 JAPAN
+        yloc = 15;
+      }
+      if ((xloc == 106) && (yloc == 29) && ab.pressed(RIGHT_BUTTON)&& ab.everyXFrames(15))  { //if at E4 and press right
+        xloc = 115; //move to  F1? 
+        yloc = 37;
+      }
+      //AUS RIGHT
+      if ((xloc == 106) && (yloc == 45) && ab.pressed(RIGHT_BUTTON)&& ab.everyXFrames(15))  { //if at F2 and press right
+        xloc = 113; //move to  F3? 
+        yloc = 46;
+      }
+      
       //UP
    
-      // CENTRAL AMERICA
+      // CENTRAL AMERICA UP
        if ((xloc == 13) && (yloc == 26) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(22))  { //if at b1 and press UP
         xloc = 13; //move to  a2
         yloc = 15; 
@@ -220,7 +252,7 @@ if (!(ab.nextFrame()))
         xloc = 13; //move to  B1
         yloc = 26; 
       }
-      // SOUTH AMERICA
+      // SOUTH AMERICA UP
       if ((xloc == 28) && (yloc == 49) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(20))  { //if at C3 and press UP
         xloc = 30; //move to C2
         yloc = 38; 
@@ -246,6 +278,38 @@ if (!(ab.nextFrame()))
       if ((xloc == 76) && (yloc == 20) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(25))  { //if at D4 and press UP
         xloc = 75; //move to D3
         yloc = 9; 
+      }
+      
+      //ASIA UP
+      // JAPAN UP
+      if ((xloc == 110) && (yloc == 15) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(28))  { //if at E3 and press UP
+        xloc = 107; //move to E2
+        yloc = 7; 
+      }
+      if ((xloc == 102) && (yloc == 35) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(28))  { //if at E5 and press UP
+        xloc = 95; //move to E6
+        yloc = 19; 
+      }
+     if ((xloc == 106) && (yloc == 29) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(28))  { //if at E4 and press UP
+        xloc = 110; //move to E3
+        yloc = 15; 
+      }
+      // AUS UP
+      if ((xloc == 106) && (yloc == 45) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(25))  { //if at F2 and press UP
+        xloc = 102; //move to E5
+        yloc = 35; 
+      }
+      if ((xloc == 95) && (yloc == 19) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(24))  { //if at E6 and press UP
+        xloc = 93; //move to E1
+        yloc = 8; 
+      }
+       if ((xloc == 113) && (yloc == 46) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(25))  { //if at F3 and press UP
+        xloc = 115; //move to F1
+        yloc = 37; 
+      }
+      if ((xloc == 115) && (yloc == 37) && ab.pressed(UP_BUTTON)&& ab.everyXFrames(24))  { //if at F1 and press UP
+        xloc = 106; //move to e4
+        yloc = 29; 
       }
     // DOWN
     //DOWN
@@ -286,8 +350,49 @@ if (!(ab.nextFrame()))
         xloc = 76; //move to  D4
         yloc = 20; 
       }
-    
+     if ((xloc == 76) && (yloc == 20) && ab.pressed(DOWN_BUTTON)&& ab.everyXFrames(17))  { //if at D4 and press down
+        xloc = 66; //move to  g2
+        yloc = 33; 
+      }
+      //ASIA DOWN
+      //E1 TO E6
+      if ((xloc == 93) && (yloc == 8) && ab.pressed(DOWN_BUTTON)&& ab.everyXFrames(26))  { //if at E1 and press DOWN
+        xloc = 95; //move to E6
+        yloc = 19; 
+      }
+      //E2 TO JAPAN
+      if ((xloc == 107) && (yloc == 7) && ab.pressed(DOWN_BUTTON)&& ab.everyXFrames(26))  { //if at E2 and press DOWN
+        xloc = 110; //move to E3
+        yloc = 15; 
+      }
+      //E3 TO E4
+      if ((xloc == 110) && (yloc == 15) && ab.pressed(DOWN_BUTTON)&& ab.everyXFrames(25))  { //if at E3 and press DOWN
+        xloc = 106; //move to E4
+        yloc = 29; 
+      }
+      //E5 TO E5
+      if ((xloc == 106) && (yloc == 29) && ab.pressed(DOWN_BUTTON)&& ab.everyXFrames(24))  { //if at E1 and press DOWN
+        xloc = 102; //move to E5
+        yloc = 35; 
+      }
+      //E6 TO E5
+      if ((xloc == 95) && (yloc == 19) && ab.pressed(DOWN_BUTTON)&& ab.everyXFrames(25))  { //if at E5 and press DOWN
+        xloc = 102; //move to E6
+        yloc = 35; 
+      }
+      //E5 TO  F2?
+    if ((xloc == 102) && (yloc == 35) && ab.pressed(DOWN_BUTTON)&& ab.everyXFrames(24))  { //if at E5 and press DOWN
+        xloc = 106; //move to F2?
+        yloc = 45; 
+      }
+      //AUS DOWN
+      if ((xloc == 115) && (yloc == 37) && ab.pressed(DOWN_BUTTON)&& ab.everyXFrames(20))  { //if at F1 and press DOWN
+        xloc = 113; //move to F3?
+        yloc = 46; 
+      }
     ab.drawBitmap((0), (0), mapyo, 128, 54, WHITE);
+    ab.setCursor((70), (50));
+      ab.print(xloc);
       ab.setCursor((xloc), (yloc));
       ab.print("X");
     
