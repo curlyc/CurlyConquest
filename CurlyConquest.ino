@@ -261,143 +261,284 @@ if (!(ab.nextFrame()))
        
       
       if (tgivx >= 1) {
-        if ((a1o == turn) && (xloc == 4) && (yloc == 6) && (ab.pressed(B_BUTTON))) {
+        if ((a1o == turn) && (xloc == 4) && (yloc == 6) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           a1 += 1;
+          troo = a1;
           if (turn == 1) {
             tgiv1 -=1;;
           }
           
           //if at start up turn +=1;
         }
-        if ((a2o == turn) && (xloc == 13) && (yloc == 15) && (ab.pressed(B_BUTTON))) {
+        if ((a2o == turn) && (xloc == 13) && (yloc == 15) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           a2 += 1;
+          troo = a2;
           if (turn == 1) {
             tgiv1 -=1;;
           }
           //if at start up turn +=1;
         }
-        if ((a3o == turn) && (xloc == 22) && (yloc == 11) && (ab.pressed(B_BUTTON))) {
+        if ((a3o == turn) && (xloc == 22) && (yloc == 11) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           a3 += 1;
+          troo = a3;
           if (turn == 1) {
             tgiv1 -=1;;
           }
           //if at start up turn +=1;
         }
-        if ((a4o == turn) && (xloc == 30) && (yloc == 6) && (ab.pressed(B_BUTTON))) {
+        if ((a4o == turn) && (xloc == 30) && (yloc == 6) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           a4 += 1;
-          if (turn == 1) {
-            tgiv1 -=1;;
-          }
+          troo = a4;
+  
+          if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((b1o == turn) && (xloc == 13) && (yloc == 26) && (ab.pressed(B_BUTTON))) {
+        if ((b1o == turn) && (xloc == 13) && (yloc == 26) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           b1 += 1;
+          troo = b1;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((b2o == turn) && (xloc == 17) && (yloc == 31) && (ab.pressed(B_BUTTON))) {
+        if ((b2o == turn) && (xloc == 17) && (yloc == 31) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           b2 += 1;
+          troo = b2;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((c1o == turn) && (xloc == 24) && (yloc == 32) && (ab.pressed(B_BUTTON))) {
+        if ((c1o == turn) && (xloc == 24) && (yloc == 32) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           c1 += 1;
+          troo = c1;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((c2o == turn) && (xloc == 30) && (yloc == 38) && (ab.pressed(B_BUTTON))) {
+        if ((c2o == turn) && (xloc == 30) && (yloc == 38) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           c2 += 1;
+          troo = c2;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((c3o == turn) && (xloc == 28) && (yloc == 49) && (ab.pressed(B_BUTTON))) {
+        if ((c3o == turn) && (xloc == 28) && (yloc == 49) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           c3 += 1;
+          troo = c3;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((d1o == turn) && (xloc == 45) && (yloc == 3) && (ab.pressed(B_BUTTON))) {
+        if ((d1o == turn) && (xloc == 45) && (yloc == 3) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           d1 += 1;
+          troo = d1;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((d2o == turn) && (xloc == 62) && (yloc == 10) && (ab.pressed(B_BUTTON))) {
+        if ((d2o == turn) && (xloc == 62) && (yloc == 10) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           d2 += 1;
+          troo = d2;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((d3o == turn) && (xloc == 75) && (yloc == 9) && (ab.pressed(B_BUTTON))) {
+        if ((d3o == turn) && (xloc == 75) && (yloc == 9) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           d3 += 1;
+          troo = d3;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((d4o == turn) && (xloc == 76) && (yloc == 20) && (ab.pressed(B_BUTTON))) {
+        if ((d4o == turn) && (xloc == 76) && (yloc == 20) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           d4 += 1;
+          troo = d4;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((e1o == turn) && (xloc == 93) && (yloc == 8) && (ab.pressed(B_BUTTON))) {
+        if ((e1o == turn) && (xloc == 93) && (yloc == 8) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           e1 += 1;
+          troo = e1;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((e2o == turn) && (xloc == 107) && (yloc == 7) && (ab.pressed(B_BUTTON))) {
+        if ((e2o == turn) && (xloc == 107) && (yloc == 7) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           e2 += 1;
+          troo = e2;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((e3o == turn) && (xloc == 110) && (yloc == 15) && (ab.pressed(B_BUTTON))) {
+        if ((e3o == turn) && (xloc == 110) && (yloc == 15) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           e3 += 1;
+          troo = e3;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((e4o == turn) && (xloc == 106) && (yloc == 29) && (ab.pressed(B_BUTTON))) {
+        if ((e4o == turn) && (xloc == 106) && (yloc == 29) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           e4 += 1;
+          troo = e4;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((e5o == turn) && (xloc == 102) && (yloc == 35) && (ab.pressed(B_BUTTON))) {
+        if ((e5o == turn) && (xloc == 102) && (yloc == 35) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           e5 += 1;
+          troo = e5;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((e6o == turn) && (xloc == 95) && (yloc == 19) && (ab.pressed(B_BUTTON))) {
+        if ((e6o == turn) && (xloc == 95) && (yloc == 19) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           e6 += 1;
+          troo = e6;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((f1o == turn) && (xloc == 115) && (yloc == 37) && (ab.pressed(B_BUTTON))) {
+        if ((f1o == turn) && (xloc == 115) && (yloc == 37) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           f1 += 1;
+          troo = f1;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((f2o == turn) && (xloc == 106) && (yloc == 45) && (ab.pressed(B_BUTTON))) {
+        if ((f2o == turn) && (xloc == 106) && (yloc == 45) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           f2 += 1;
+          troo = f2;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((f3o == turn) && (xloc == 113) && (yloc == 46) && (ab.pressed(B_BUTTON))) {
+        if ((f3o == turn) && (xloc == 113) && (yloc == 46) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           f3 += 1;
+          troo = f3;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((g1o == turn) && (xloc == 57) && (yloc == 24) && (ab.pressed(B_BUTTON))) {
+        if ((g1o == turn) && (xloc == 57) && (yloc == 24) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           g1 += 1;
+          troo = g1;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((g2o == turn) && (xloc == 66) && (yloc == 33) && (ab.pressed(B_BUTTON))) {
+        if ((g2o == turn) && (xloc == 66) && (yloc == 33) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           g2 += 1;
+          troo = g2;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
-        if ((g3o == turn) && (xloc == 65) && (yloc == 44) && (ab.pressed(B_BUTTON))) {
+        if ((g3o == turn) && (xloc == 65) && (yloc == 44) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           g3 += 1;
+          troo = g3;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
+          
           //if at start up turn +=1;
         }
-        if ((g4o == turn) && (xloc == 75) && (yloc == 43) && (ab.pressed(B_BUTTON))) {
+        if ((g4o == turn) && (xloc == 75) && (yloc == 43) && (ab.pressed(B_BUTTON))&& ab.everyXFrames(10)) {
           g4 += 1;
+          troo = g4;
           if (turn == 1) {            tgiv1 -=1;           }
+          if (turn == 2) {            tgiv2 -=1;           }
+          if (turn == 3) {            tgiv3 -=1;           }
+          if (turn == 4) {            tgiv4 -=1;           }
+          if (turn == 5) {            tgiv1 -=1;           }
+          if (turn == 6) {            tgiv1 -=1;           }
           //if at start up turn +=1;
         }
         
