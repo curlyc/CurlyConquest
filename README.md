@@ -15,5 +15,8 @@ AFRICA = G            4 TERITORIES
 
 NAVIGATION there may be issues here and it would be easy for me to overlook something so take notes if you think something is screwy just beacause it works one way DOES NOT mean it is supposed to
 
+next step is to add player select, i think we will go 1-6
+human or arduboy
+
 
 
